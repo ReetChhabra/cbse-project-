@@ -13,6 +13,3 @@ def insertrecord( name, adminNo , adYear , passoutYear , cls , phoneNo , house ,
 def queryfromtable(select, condition):
     restr='SELECT {} '.format(select)+'FROM {} '.format(tablename)+'WHERE {}'.format(condition)+';'
     return restr
-
-settablenameformanipulating('students')
-print(insertrecord(adminNo='123', name='arpan', cls='12', gender='M', fatherName='Dilawar', motherName='Unknown', age='17', dob='2002/01/09', house='Ashoka', phoneNo='1234567890', adYear='2005', passoutYear='--'))
