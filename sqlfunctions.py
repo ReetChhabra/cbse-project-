@@ -11,7 +11,7 @@ def createtable(name):
 
 def command(string):
     cursor.execute(string)
+    dbconnection.commit()
 
 def closedb():
-    dbconnection.commit()
     dbconnection.close()

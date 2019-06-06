@@ -1,0 +1,12 @@
+adminno=0
+name=''
+cls=0
+gender=''
+fathername=''
+mothername=''
+age=0
+dob=''
+house=''
+phoneno=0
+adyear=''
+passoutyear=''
