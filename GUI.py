@@ -65,87 +65,90 @@ label_0=Label(root,text="STUDENT RECORD",width=20,font=("bold",20))
 label_0.place(x=200,y=53)
 
 label_1=Label(root,text="ADMISSION NO.",width=20,font=("bold",12))
-label_1.place(x=80,y=130)
-
-addrecordbutton=Button(root, command=setdata, text='Add Record')
-addrecordbutton.pack()
+label_1.place(x=5,y=130)
 
 adminentry=Entry(root,textvariable='_adminno')
-adminentry.place(x=240,y=130)
+adminentry.place(x=172,y=130)
 
 label_2=Label(root,text="NAME",width=20,font=("bold",12))
-label_2.place(x=68,y=180)
+label_2.place(x=280,y=130)
 
 nameentry=Entry(root)
-nameentry.place(x=240,y=180)
+nameentry.place(x=490,y=130)
 
 label_3=Label(root,text="FATHER'S NAME",width=20,font=("bold",12))
-label_3.place(x=70,y=230)
+label_3.place(x=7,y=180)
 
 fathernameentry=Entry(root)
-fathernameentry.place(x=240,y=230)
+fathernameentry.place(x=170,y=180)
 
 label_4=Label(root,text="MOTHER'S NAME",width=20,font=("bold",12))
-label_4.place(x=70,y=280)
+label_4.place(x=322,y=180)
 
 mothernameentry=Entry(root)
-mothernameentry.place(x=240,y=280)
+mothernameentry.place(x=490,y=180)
 
 label_5=Label(root,text="DATE OF BIRTH",width=20,font=("bold",12))
-label_5.place(x=70,y=330)
+label_5.place(x=4,y=230)
 
 dobentry=Entry(root, textvariable=_dob)
-dobentry.place(x=240,y=330)
+dobentry.place(x=170,y=230)
 
 label_6=Label(root,text="AGE",width=20,font=("bold",12))
-label_6.place(x=70,y=380)
+label_6.place(x=275,y=230)
 
 ageentry=Entry(root, textvariable=_age)
-ageentry.place(x=240,y=380)
+ageentry.place(x=490,y=230)
 
 label_7=Label(root,text="ADDRESS",width=20,font=("bold",12))
-label_7.place(x=70,y=430)
+label_7.place(x=3,y=280)
 
 addressentry=Entry(root, textvariable=_address)
-addressentry.place(x=240,y=430)
+addressentry.place(x=170,y=280)
 
 label_8=Label(root,text="PHONE NO.",width=20,font=("bold",12))
-label_8.place(x=70,y=480)
+label_8.place(x=300,y=280)
 
 phonenoentry=Entry(root, textvariable=_phoneno)
-phonenoentry.place(x=240,y=480)
+phonenoentry.place(x=490,y=280)
 
 label_9=Label(root,text="GENDER",width=20,font=("bold",12))
-label_9.place(x=70,y=530)
+label_9.place(x=5,y=330)
 
 genderlist=['M','F']
 genderentry=OptionMenu(root, _gender, *genderlist)
 genderentry.config(width=15)
-genderentry.place(x=235,y=530)
+genderentry.place(x=165,y=330)
 
 label_10=Label(root,text="CLASS",width=20,font=("bold",12))
-label_10.place(x=70,y=580)
+label_10.place(x=285,y=330)
 
 classlist=['1','2','3','4','5','6','7','8','9','10','11','12']
 c=StringVar()
 droplist=OptionMenu(root,_cls,*classlist)
 droplist.config(width=15)
-droplist.place(x=240,y=580)
+droplist.place(x=485,y=330)
 
 label_11=Label(root,text="ADMIN YEAR",width=20,font=("bold",12))
-label_11.place(x=70,y=630)
+label_11.place(x=5,y=380)
 
 adyearentry=Entry(root, textvariable=_adyear)
-adyearentry.place(x=240,y=630)
+adyearentry.place(x=170,y=380)
 
 label_12=Label(root,text="HOUSE",width=20,font=("bold",12))
-label_12.place(x=70,y=680)
+label_12.place(x=285,y=380)
 
 houseentry=Entry(root, textvariable=_house)
-houseentry.place(x=240,y=680)
+houseentry.place(x=490,y=380)
+
+label_13=Label(root,text="PASS OUT YEAR",width=20,font=("bold",12))
+label_13.place(x=5,y=430)
 
 passoutyearentry=Entry(root, textvariable=_passoutyear)
-passoutyearentry.pack()
+passoutyearentry.place(x=170,y=430)
+
+addrecordbutton=Button(root, command=setdata, text='Add Record')
+addrecordbutton.place(x=310,y=480)
 
 
 
