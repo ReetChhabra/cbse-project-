@@ -1,12 +1,28 @@
-adminno=0
+adminno=''
 name=''
-cls=0
+cls=''
 gender=''
 fathername=''
 mothername=''
-age=0
+address=''
+age=''
 dob=''
 house=''
-phoneno=0
+phoneno=''
 adyear=''
 passoutyear=''
+
+def clear():
+    adminno=''
+    name=''
+    cls=''
+    gender=''
+    fathername=''
+    mothername=''
+    address=''
+    age=''
+    dob=''
+    house=''
+    phoneno=''
+    adyear=''
+    passoutyear=''
