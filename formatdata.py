@@ -13,3 +13,37 @@ def insertrecord( name, adminNo , adYear , passoutYear , cls , phoneNo , house ,
 def queryfromtable(select, condition):
     restr='SELECT {} '.format(select)+'FROM {} '.format(tablename)+'WHERE {}'.format(condition)+';'
     return restr
+
+def formatconditionforquery(fieldname, entryvalue):
+    if fieldname == 'Admission Number' :
+        return 'adminNo={}'.format(entryvalue)
+    elif fieldname == 'Name' :
+        return 'name LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'Father\'s name' :
+        return 'fatherName LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'Mother\'s name' :
+        return 'motherName LIKE %{}%'.format(entryvalue)
+    elif fieldname== 'Class':
+        return 'cls={}'.format(entryvalue)
+    elif fieldname == 'Phone Number':
+        return 'phoneNo LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'Gender' :
+        return 'gender = {}'.format(entryvalue)
+    elif fieldname == 'Age' :
+        return 'age = {}'.format(entryvalue)
+    elif fieldname == 'Date of Birth' :
+        return 'dob LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'Address' :
+        return 'address LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'House' :
+        return 'house LIKE %{}%'.format(entryvalue)
+    elif fieldname == 'Admission Year' :
+        return 'adYear={}'.format(entryvalue)
+    elif fieldname == 'Passout Year' :
+        return 'passoutYear = {}'.format(entryvalue)
+
+
+
+
+#settablenameformanipulating('students')
+#print(queryfromtable('Name', 'Name=\'nametosearch\''))

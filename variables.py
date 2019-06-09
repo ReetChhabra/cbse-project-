@@ -12,6 +12,9 @@ phoneno=''
 adyear=''
 passoutyear=''
 
+where=''
+fieldname=''
+
 def clear():
     adminno=''
     name=''

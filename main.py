@@ -14,7 +14,11 @@ def enterdata():
     format.settablenameformanipulating('students')
     sql.command(format.insertrecord(adminNo=var.adminno, name=var.name, cls=var.cls, gender=var.gender, fatherName=var.fathername, motherName=var.mothername, address=var.address, age=var.age, dob=var.dob, house=var.house, phoneNo=var.phoneno, adYear=var.adyear, passoutYear=var.passoutyear))
 
+def query():
+    format.settablenameformanipulating('students')
+    sql.command(format.queryfromtable(select='*', condition=format.formatconditionforquery(entryvalue=var.where,fieldname=var.fieldname)))
+
 
 def test():
     format.settablenameformanipulating('students')
-    print(format.insertrecord(adminNo=var.adminno, name=var.name, cls=var.cls, gender=var.gender, fatherName=var.fathername, motherName=var.mothername, address=var.address, age=var.age, dob=var.dob, house=var.house, phoneNo=var.phoneno, adYear=var.adyear, passoutYear=var.passoutyear))
+    print(format.queryfromtable(select='*', condition=format.formatconditionforquery(entryvalue=var.where,fieldname=var.fieldname)))
