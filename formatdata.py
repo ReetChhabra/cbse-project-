@@ -38,7 +38,7 @@ def formatconditionforquery(fieldname, entryvalue):
     elif fieldname == 'House' :
         return 'house LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'Admission Year' :
-        return 'adYear={}'.format(entryvalue)
+        return 'adYear = {}'.format(entryvalue)
     elif fieldname == 'Passout Year' :
         return 'passoutYear = {}'.format(entryvalue)
 

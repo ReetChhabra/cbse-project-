@@ -15,6 +15,9 @@ root.title('Query DB')
 _fieldname=StringVar()
 _where=StringVar()
 
+label=Label(root, text='Search by field', font=('bold',12))
+label.pack()
+
 fieldlist=['Admission Number','Name','Father\'s name','Mother\'s name','Phone Number',
 'Class','Gender','Age','Date of Birth','Address','House','Admission Year','Passout Year']
 

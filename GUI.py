@@ -3,6 +3,7 @@ import variables as var
 import main
 import sqlfunctions as sql
 
+
 main.intialize()
 
 def setdata():
@@ -146,8 +147,6 @@ passoutyearentry=Entry(root, textvariable=_passoutyear)
 passoutyearentry.place(x=170,y=430)
 
 addrecordbutton=Button(root, command=setdata, text='Add Record')
-addrecordbutton.place(x=310,y=480)
-
-
+addrecordbutton.place(x=315,y=460)
 
 root.mainloop()
