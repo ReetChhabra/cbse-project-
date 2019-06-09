@@ -20,23 +20,23 @@ def formatconditionforquery(fieldname, entryvalue):
     elif fieldname == 'Name' :
         return 'name LIKE %{}%'.format(entryvalue)
     elif fieldname == 'Father\'s name' :
-        return 'fatherName LIKE %{}%'.format(entryvalue)
+        return 'fatherName LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'Mother\'s name' :
-        return 'motherName LIKE %{}%'.format(entryvalue)
+        return 'motherName LIKE \'%{}%\''.format(entryvalue)
     elif fieldname== 'Class':
         return 'cls={}'.format(entryvalue)
     elif fieldname == 'Phone Number':
-        return 'phoneNo LIKE %{}%'.format(entryvalue)
+        return 'phoneNo LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'Gender' :
         return 'gender = {}'.format(entryvalue)
     elif fieldname == 'Age' :
         return 'age = {}'.format(entryvalue)
     elif fieldname == 'Date of Birth' :
-        return 'dob LIKE %{}%'.format(entryvalue)
+        return 'dob LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'Address' :
-        return 'address LIKE %{}%'.format(entryvalue)
+        return 'address LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'House' :
-        return 'house LIKE %{}%'.format(entryvalue)
+        return 'house LIKE \'%{}%\''.format(entryvalue)
     elif fieldname == 'Admission Year' :
         return 'adYear={}'.format(entryvalue)
     elif fieldname == 'Passout Year' :
