@@ -5,8 +5,7 @@ import main
 def query():
     var.where=queryentry.get()
     var.fieldname=_fieldname.get()
-    print(_fieldname.get(),queryentry.get())
-    main.test()
+    main.query()
 
 root= Tk()
 root.geometry('400x600')

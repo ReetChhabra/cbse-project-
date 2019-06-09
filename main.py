@@ -7,7 +7,6 @@ import variables as var
 #be run as the file is imported in the GUI file
 
 def intialize():
-    sql.startdb()
     sql.createtable('students')
 
 def enterdata():
@@ -17,6 +16,9 @@ def enterdata():
 def query():
     format.settablenameformanipulating('students')
     sql.command(format.queryfromtable(select='*', condition=format.formatconditionforquery(entryvalue=var.where,fieldname=var.fieldname)))
+    resultlist=sql.fetchdata()
+    for x in resultlist:
+        print(x)
 
 
 def test():
