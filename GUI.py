@@ -3,6 +3,8 @@ import variables as var
 import main
 import sqlfunctions as sql
 
+main.intialize()
+
 def setdata():
     print(adminentry.get())
     var.adminno=adminentry.get()
@@ -19,7 +21,6 @@ def setdata():
     var.adyear=adyearentry.get()
     var.passoutyear=passoutyearentry.get()
     main.enterdata()
-    main.test()
     clearvalues()
 
 
