@@ -15,6 +15,8 @@ passoutyear=''
 where=''
 fieldname=''
 
+resultto=''
+
 def clear():
     adminno=''
     name=''

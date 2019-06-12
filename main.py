@@ -1,6 +1,8 @@
 import sqlfunctions as sql
 import formatdata as format
 import variables as var
+import resultUI
+
 
 #always keep all the statements into functions even if its a single line
 #statement as all other commands which are not in functions will automatically
@@ -17,8 +19,11 @@ def query():
     format.settablenameformanipulating('students')
     sql.command(format.queryfromtable(select='*', condition=format.formatconditionforquery(entryvalue=var.where,fieldname=var.fieldname)))
     resultlist=sql.fetchdata()
-    for x in resultlist:
-        print(x)
+    if var.resultto=='Text File':
+        resultUI.displayresult(resultlist)
+    elif var.resultto=='Text Box':
+        resultUI.resulttextboxui(resultlist)
+
 
 
 def test():
